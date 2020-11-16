@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+
+/*!
+ * Bootstrap v5.0.0-alpha3 (https://getbootstrap.com/)
+ * Copyright 2011-2020 The Bootstrap Authors
+ * Copyright 2011-2020 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+// scss-docs-start import-stack
+// Configuration
+@import "bootstrap/functions";
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+@import "bootstrap/utilities";
+
+// Layout & components
+@import "bootstrap/root";
+@import "bootstrap/reboot";
+@import "bootstrap/type";
+@import "bootstrap/images";
+@import "bootstrap/containers";
+@import "bootstrap/grid";
+@import "bootstrap/tables";
+@import "bootstrap/forms";
+@import "bootstrap/buttons";
+@import "bootstrap/transitions";
+@import "bootstrap/dropdown";
+@import "bootstrap/button-group";
+@import "bootstrap/nav";
+@import "bootstrap/navbar";
+@import "bootstrap/card";
+@import "bootstrap/accordion";
+@import "bootstrap/breadcrumb";
+@import "bootstrap/pagination";
+@import "bootstrap/badge";
+@import "bootstrap/alert";
+@import "bootstrap/progress";
+@import "bootstrap/list-group";
+@import "bootstrap/close";
+@import "bootstrap/toasts";
+@import "bootstrap/modal";
+@import "bootstrap/tooltip";
+@import "bootstrap/popover";
+@import "bootstrap/carousel";
+@import "bootstrap/spinners";
+
+// Helpers
+@import "bootstrap/helpers";
+
+// Utilities
+@import "bootstrap/utilities/api";
+// scss-docs-end import-stack
+
+#preloader {
+    background-color: #001300;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 90000;
+  }
+
+  body {
+    //overflow: hidden;
+    background-color: #001300;
+    color: white;
+  }
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+
+// Settings
+// ==================================================
+$hamburger-padding-x           : 15px !default;
+$hamburger-padding-y           : 15px !default;
+$hamburger-layer-width         : 40px !default;
+$hamburger-layer-height        : 4px !default;
+$hamburger-layer-spacing       : 6px !default;
+$hamburger-layer-color         : $primary !default;
+$hamburger-layer-border-radius : 4px !default;
+$hamburger-hover-opacity       : 0.7 !default;
+$hamburger-active-layer-color  : $hamburger-layer-color !default;
+$hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
+
+// To use CSS filters as the hover effect instead of opacity,
+// set $hamburger-hover-use-filter as true and
+// change the value of $hamburger-hover-filter accordingly.
+$hamburger-hover-use-filter   : false !default;
+$hamburger-hover-filter       : opacity(50%) !default;
+$hamburger-active-hover-filter: $hamburger-hover-filter !default;
+
+// Types (Remove or comment out what you don’t need)
+// ==================================================
+$hamburger-types: (
+  3dx,
+  3dx-r,
+  3dy,
+  3dy-r,
+  3dxy,
+  3dxy-r,
+  arrow,
+  arrow-r,
+  arrowalt,
+  arrowalt-r,
+  arrowturn,
+  arrowturn-r,
+  boring,
+  collapse,
+  collapse-r,
+  elastic,
+  elastic-r,
+  emphatic,
+  emphatic-r,
+  minus,
+  slider,
+  slider-r,
+  spin,
+  spin-r,
+  spring,
+  spring-r,
+  stand,
+  stand-r,
+  squeeze,
+  vortex,
+  vortex-r
+) !default;
+
+// Base Hamburger (We need this)
+// ==================================================
+@import "burguer/base";
+
+// Hamburger types
+// ==================================================
+@import "burguer/types/elastic";
+@import "burguer/types/elastic-r";
+//--------------------------------
+:root{
+--font-sans-serif: 'Montserrat', sans-serif;
+--font-monospace: 'Montserrat', sans-serif;
+}
+//Texto
+body{ font-family: 'Montserrat', sans-serif;}
+h1{
+    font-size: 72px!important;
+}
+@media only screen and (max-width: 1600px) {
+    // .subheader-base{
+    //     cursor: auto;
+    // }
+}
+@media only screen and (max-width: 991px) {
+  .menu-underline{
+      display: none;
+  }  
+}
+@media only screen and (max-width: 991px) {
+    h1{ font-size: 60px!important; }
+}
+@media only screen and (max-width: 766px) {
+    .subheader-size{    
+        height: 1100px!important;
+        min-height: 1100px!important;
+    }
+    .logo-container{
+        position: absolute;
+        z-index: -1;
+    }
+    .sobre{
+        background-color: #001300a9;
+    }
+    #section1{
+        min-height: 500px;
+    }
+    #section3{
+        background-image: url("~@/assets/img/bg/bg1.svg");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100vw;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    h1{ font-size: 60px!important; }
+    .subheader-size{    
+        height: 900px!important;
+        min-height: 900px!important;
+    }
+}
+
+//menu header
+.menu-underline{
+    background-color: $primary;
+    height: 0px;
+    transition: ease-in-out 0.2s;
+    border-width: 0px;
+    transform: translateY(-5px);
+    z-index: 7!important;
+}
+.menu-item{
+    z-index: 8!important;
+    position: relative;
+}
+.nav-item:hover .menu-underline, .nav-item:focus .menu-underline{
+    height: 5px;
+    margin-top: -5px;
+}
+.navbar-item{
+    z-index: -1!important;
+}
+
+//
+.text-primary{
+    color: #16db65!important;
+}
+.subheader-size{    
+    height: 600px;
+    min-height: 600px;
+}
+#subheader{
+    position: relative;
+    width: 100%;
+    background-color: #001500;
+    overflow: hidden;
+    // &:hover{
+    //     cursor: none;
+    // }
+}
+#bodymovin .svg{
+    width: auto!important;
+}
+.animation-c{
+    position: absolute!important;
+    top: 50%!important;
+    left: 50%!important;
+    min-width: 100%!important;
+    min-height: 100%!important;
+    width: auto!important;
+    height: auto!important;
+    z-index: 0!important;
+    -webkit-transform: translateX(-50%) translateY(-50%)!important;
+    transform: translateX(-50%) translateY(-50%)!important;
+}
+.subheader-base{
+    position:absolute;
+    bottom:0;
+    top: 0;
+    right:0;
+    left:0;
+}
+//texto
+.circle{
+    border-radius: 300px;
+    text-align: center;
+    min-width: 100%;
+    img{
+        width:100%;
+        min-width: 100%;
+    }
+}
+.bold{
+    font-weight: bold;
+}
+.animation-text-container2{
+    text-align: center;
+}
+.logo{
+    min-width: 30px;
+}
+
+.spacer{
+    min-height: 100000px;
+}
+.navbar{
+
+    border-top: 1px solid $primary;
+
+}
+.rounded{
+border-radius: 10px!important;
+}
+//.section1
+#section3{
+    background-image: url("~@/assets/img/bg/bg1.svg");
+    background-repeat: no-repeat;
+    background-position: 25% 61%;
+    background-size: 100%;
+    transition: all 2s;
+}
+.spinnerloading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+// mouse follower
+$color: $primary;
+.cursor {
+  position: absolute;
+  z-index: 10;
+
+  width: 100px;
+  height: 100px;
+
+  border: 2px solid $color;
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+//swipers
+@import "swiper";
+
+
+.testi{
+    background-color: $third;
+    min-width: 100%;
+    min-height: 300px;
+    transition: all 0.5s ease-in-out;
+}
+
+.swiper-slide{
+    opacity: 0.3;
+    transition: all 0.5s ease-in-out;
+}
+
+.swiper-slide-active{
+    opacity: 1!important;
+    .testi{
+        border: 1px solid $primary;
+    }
+}
+
+.testi:hover > .swiper-container{
+    overflow: visible;
+}
+.testi-img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+// opacity
+.opacity-0 {
+    opacity:0!important;
+  }
+  .opacity-1 {
+    opacity:0.2!important;
+  }
+  .opacity-2 {
+    opacity:0.4!important;
+  }
+  .opacity-3 {
+    opacity:0.6!important;
+  }
+  .opacity-4 {
+    opacity:.8!important;
+  }
+  .opacity-5 {
+    opacity:1!important;
+  }
+  
+  /* Maybe even support hover opacity shifts */
+  .opacity-0h5 {
+    opacity:0!important;
+    transition: opacity .25s ease-in-out!important;
+    -moz-transition: opacity .25s ease-in-out!important;
+    -webkit-transition: opacity .25s ease-in-out!important;
+  }
+  .opacity-0h5:hover {
+    opacity:1!important;
+  }
+
+  //prova social
+
+  .prova-social-bg{
+      background-color: #16db6511;
+  }
+  .heart{
+      height: 18px;
+      transform: translateY(-3px);
+      padding-right: 5px;
+      padding-left: 5px;
+  }
+//   .capa{
+//       &:hover{
+//         cursor: pointer;
+//       }
+//   }
+
+.fade-in-enter-active {
+    transition: all .6s ease;
+}
+.fade-in-leave-active {
+transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.fade-in-enter, .fade-in-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ { 
+opacity: 0;
+}

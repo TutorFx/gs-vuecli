@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/preload.scss"
+    ],
+    "names": [],
+    "file": "preload.min.css"
+}
