@@ -5,12 +5,12 @@
       <h4 class="text-light bold">
         Veja agora no Behance alguns de meus projetos
       </h4>
-      <div id="filter">
+      <!-- <div id="filter">
         <a class="btn btn-third mr-2" data-filter="*">Tudo</a>
         <a class="btn btn-third mr-2" data-filter=".branding">Branding</a>
         <a class="btn btn-third mr-2" data-filter=".motion">Motion Design</a>
         <a v-for="item in portfolio" v-bind:key="item.key" class="btn btn-third mr-2">Motion Design</a>
-      </div>
+      </div> -->
 
       <div class="grid text-primary projects-wrapper row py-5">
         <div
@@ -171,8 +171,6 @@ export default {
        {nome: 'logo', tag:'', link: 'https://www.behance.net/gallery/84353731/Logo-Gabriel-Serejo', capa: 'https://mir-s3-cdn-cf.behance.net/projects/max_808/46736c84353731.Y3JvcCw4NzMsNjgyLDAsNDE.png'},
        {nome: 'motion', tag:'', link: 'https://www.behance.net/gallery/84137677/Motion-Designs-10', capa: 'https://mir-s3-cdn-cf.behance.net/projects/max_808/ae681c84137677.Y3JvcCwxMjAwLDkzOCwwLDU5.png'},
     ],
-    filtered: this.portfolio,
-    filterText: '',
   }},
   components: {
     Swiper,
@@ -182,9 +180,6 @@ export default {
     onSwiper(swiper) {
     },
     onSlideChange() {
-    },
-    buscar: function() {
-      
     }
   },
   mounted(){

@@ -5,10 +5,10 @@
 </template>
 
 <script>
-
-
 export default {
-  
+  mounted: function (){
+    document.title = 'Gabriel Serejo - Motion'
+  }
 }
 </script>
 

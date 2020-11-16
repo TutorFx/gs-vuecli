@@ -21,6 +21,9 @@ export default {
   name: 'Home',
   components: {
     contato, portfolio, cases, institucional
+  },
+  mounted(){
+    document.title = 'Gabriel Serejo - HOME'
   }
 }
 </script>
