@@ -12,6 +12,7 @@
 </template>
 
 <script>
+import 'bootstrap';
 
 import navigation from "@/components/navigation"
 import hero from "@/components/hero"
@@ -19,7 +20,6 @@ import tfooter from "@/components/tfooter"
 
 import Vue from 'vue'
 import VueMeta from 'vue-meta'
-
 
 
 export default {
