@@ -22,6 +22,7 @@ import Vue from 'vue'
 import VueMeta from 'vue-meta'
 
 
+
 export default {
   components: {navigation, hero, tfooter},
 }

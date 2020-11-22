@@ -1,16 +1,17 @@
 <template>
-  <div class="about">
-    <construcao/>
+  <div class="portfolio">
+    <construcao />
   </div>
 </template>
 <script>
-import construcao from "@/components/construindo.vue"
+  import construcao from '@/components/construcao.vue'
+
 export default {
   mounted: function (){
-    document.title = 'Gabriel Serejo - Contato'
+    document.title = 'Gabriel Serejo - Portfólio'
   },
-    components: {
+  components: {
     construcao
-  },
+  }
 }
 </script>

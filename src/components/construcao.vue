@@ -14,7 +14,7 @@ import lottie from "lottie-web";
 
 export default { 
 
-    created(){
+    mounted(){
     this.anim = lottie.loadAnimation({
       container: document.getElementById('emconstrucao'), // the dom element that will contain the animation
       renderer: 'svg',
@@ -22,7 +22,6 @@ export default {
       autoplay: true,
       path: 'https://assets4.lottiefiles.com/packages/lf20_g4briscn.json' // the path to the animation json
     });
-    window.scrollTo(document.getElementById('emconstrucao').offsetLeft,document.getElementById('emconstrucao').offsetTop);
     }
 }
 </script>

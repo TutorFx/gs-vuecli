@@ -27,33 +27,9 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <router-link to="/blog" class="nav-link"
-                ><div class="menu-item">
-                  Blog
-                </div>
-                <div class="menu-underline"></div
-              ></router-link>
-            </li>
-            <li class="nav-item active">
-              <router-link to="/motion" class="nav-link"
-                ><div class="menu-item">
-                  Motion
-                </div>
-                <div class="menu-underline"></div
-              ></router-link>
-            </li>
-            <li class="nav-item active">
               <router-link to="/portifa" class="nav-link"
                 ><div class="menu-item">
                   Portfolio
-                </div>
-                <div class="menu-underline"></div
-              ></router-link>
-            </li>
-            <li class="nav-item active">
-              <router-link to="/clientela" class="nav-link"
-                ><div class="menu-item">
-                  Clientela
                 </div>
                 <div class="menu-underline"></div
               ></router-link>
