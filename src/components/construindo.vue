@@ -14,7 +14,7 @@ import lottie from "lottie-web";
 
 export default { 
 
-    mounted(){
+    created: function(){
     this.anim = lottie.loadAnimation({
       container: document.getElementById('emconstrucao'), // the dom element that will contain the animation
       renderer: 'svg',
