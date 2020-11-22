@@ -4,7 +4,8 @@
     <router-link to="/about">About</router-link>
   </div> -->
   <div>
-    <hero/>
+    <blacklivesmatter/>
+    <hero v-show="true" />
     <navigation/>
     <router-view/>
     <tfooter/>
@@ -17,6 +18,7 @@ import 'bootstrap';
 import navigation from "@/components/navigation"
 import hero from "@/components/hero"
 import tfooter from "@/components/tfooter"
+import blacklivesmatter from "@/components/blacklivesmatter.vue"
 
 import Vue from 'vue'
 import VueMeta from 'vue-meta'
@@ -24,7 +26,7 @@ import VueMeta from 'vue-meta'
 
 
 export default {
-  components: {navigation, hero, tfooter},
+  components: {navigation, hero, tfooter, blacklivesmatter},
 }
 
 </script>

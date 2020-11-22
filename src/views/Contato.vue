@@ -1,18 +1,23 @@
 <template>
   <div class="contato">
-    <div class="container py-5 formulario">
+    <div class="container formulario">
       <form action="">
-        <input type="text" name="Nome" id="CadastroNome">
-        <small>Flat</small>
+        
       </form>
     </div>
+    <contato />
   </div>
 </template>
 <script>
+import contato from '@/components/contato.vue'
 
 export default {
+
   mounted: function (){
     document.title = 'Gabriel Serejo - Contato'
+  },
+  components: {
+    contato
   }
 }
 </script>

@@ -1,6 +1,6 @@
 <template id="header">
-  <div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <router-link to="/" class="nav-link"
           ><a class="navbar-brand"
