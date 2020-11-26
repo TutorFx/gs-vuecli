@@ -24,7 +24,7 @@ export default {
     });
     },
     beforeUnmount: function () {
-    this.anim = undefined;
+      this.anim = lottie.destroy();
     }
 }
 </script>
