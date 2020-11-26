@@ -30,6 +30,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+
+#emconstrucao svg{
+  width: 100%!important;
+}
 
 </style>
