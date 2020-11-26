@@ -17,6 +17,7 @@ export default {
     mounted(){
     this.anim = lottie.loadAnimation({
       container: document.getElementById('emconstrucao'), // the dom element that will contain the animation
+      name: 'construindo',
       renderer: 'svg',
       loop: true,
       autoplay: true,
@@ -24,7 +25,7 @@ export default {
     });
     },
     beforeUnmount: function () {
-      this.anim = lottie.destroy();
+      this.anim = lottie.destroy('construindo');
     }
 }
 </script>
