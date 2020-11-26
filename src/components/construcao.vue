@@ -22,6 +22,9 @@ export default {
       autoplay: true,
       path: 'https://assets4.lottiefiles.com/packages/lf20_g4briscn.json' // the path to the animation json
     });
+    },
+    beforeUnmount: function () {
+    this.anim = undefined;
     }
 }
 </script>
