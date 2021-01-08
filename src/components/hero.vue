@@ -8,7 +8,7 @@
             class="mp-5 col-sm-12 col-md-8 col-xs-12 order-md-1 animation-text-container d-flex align-items-center"
           >
             <div>
-              <h5 class="text-light">Sem rótulo, apenas Serejo.</h5>
+              <h5 class="text-light">Sem rótulo, só Serejo.</h5>
               <h1 class="text-light h1">
                 <b>
                   Olá, sou <span class="text-primary">Gabriel Serejo</span>,
