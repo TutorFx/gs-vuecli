@@ -43,9 +43,11 @@
               ></router-link>
             </li>
           </ul>
+          <router-link to="/contato">
           <a class="my-2 mb-sm-4 mb-md-0 my-md-0 btn btn-warning text-dark">
             <b>Contato</b>
           </a>
+          </router-link>
         </div>
       </div>
     </nav>
