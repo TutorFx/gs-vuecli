@@ -20,7 +20,7 @@
                 </div>
                 <div class="col-12 text">
                   <label for="exampleInputMessage1">Mensagem</label>
-                  <textarea cols="10" rows="4" name="mensage" class="form-control" aria-required="true" aria-invalid="false" placeholder="Mensagem" required="" spellcheck="false" data-gramm="false"></textarea>
+                  <textarea cols="10" rows="4" name="message" class="form-control" aria-required="true" aria-invalid="false" placeholder="Mensagem" required="" spellcheck="false" data-gramm="false"></textarea>
                 </div>
               </div>
               <button type="submit" class="btn btn-primary">Enviar</button>
