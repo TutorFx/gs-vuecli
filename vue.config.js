@@ -4,8 +4,8 @@ module.exports = {
         name: "ITH Pós Graduação",
         short_name: "ITH Pós Graduação",
         appleMobileWebAppCapable: true,
-        themeColor: "#191A35",
-        msTileColor: "#191A35",
+        themeColor: "#001400",
+        msTileColor: "#001400",
         manifestOptions: {
           background_color: "#FFF"
         },
