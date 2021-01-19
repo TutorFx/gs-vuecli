@@ -1,8 +1,8 @@
 // vue.config.js
 module.exports = {
     pwa: {
-        name: "ITH Pós Graduação",
-        short_name: "ITH Pós Graduação",
+        name: "Gabriel Serejo - Portfolio",
+        short_name: "Gabriel Serejo",
         appleMobileWebAppCapable: true,
         themeColor: "#001400",
         msTileColor: "#001400",
