@@ -18,7 +18,7 @@ export default {
 .blm{
     background-color: black;
     text-align: center;
-    padding: 10px
-    
+    padding: 10px;
+    color: white;
 }
 </style>

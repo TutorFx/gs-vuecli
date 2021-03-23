@@ -1,10 +1,10 @@
 <template>
-  <div class="mb-5">
+  <div>
       <div class="emconstrucao-guia text-center">
           <div id="emconstrucao"></div>
       </div>
       <div>
-          <h4 class="text-center"> <b> A página que você acessou está sendo construída,</b><br>novidades em breve!</h4>
+          <h4 class="text-center text-white pb-15 mb-0"> <b> A página que você acessou está sendo construída,</b><br>novidades em breve!</h4>
       </div>
   </div>
 </template>
@@ -35,5 +35,4 @@ export default {
 #emconstrucao svg{
   width: 100%!important;
 }
-
 </style>

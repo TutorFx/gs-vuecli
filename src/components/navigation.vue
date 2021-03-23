@@ -3,12 +3,11 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <router-link to="/" class="nav-link"
-          ><a class="navbar-brand"
-            ><img
-              src="@/assets/img/logo/logolight.svg"
+          >
+            <img
+              :src="require('@/assets/img/logo/logolight.svg')"
               alt="logotipo Gabriel Serejo motion designer"
-              class="logo"/></a
-        ></router-link>
+              class="logo"/></router-link>
 
         <div
           class="navbar-toggler hamburger hamburger--elastic js-hamburger"
@@ -91,6 +90,6 @@ export default {
 };
 </script>
 
-<style>
-@import url("../assets/css/styles.min.css");
+<style lang="scss">
+@import "../assets/scss/styles.scss";
 </style>

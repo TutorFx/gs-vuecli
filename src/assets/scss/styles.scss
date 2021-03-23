@@ -63,7 +63,6 @@
   }
 
   body {
-    //overflow: hidden;
     background-color: #001300;
     color: white;
   }
@@ -294,6 +293,7 @@ border-radius: 10px!important;
     background-position: 25% 61%;
     background-size: 100%;
     transition: all 2s;
+    background-color: #001300!important;
 }
 .spinnerloading{
     position: absolute;
@@ -321,7 +321,7 @@ $color: $primary;
 
 .testi{
     background-color: $third;
-    min-width: 100%;
+    width: 100%;
     min-height: 300px;
     transition: all 0.5s ease-in-out;
 }
@@ -343,8 +343,8 @@ $color: $primary;
 }
 .testi-img{
     border-radius: 50%;
-    width: 70px;
     height: 70px;
+    width: 70px;
 }
 // opacity
 .opacity-0 {
@@ -403,4 +403,8 @@ transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 .fade-in-enter, .fade-in-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ { 
 opacity: 0;
+}
+.btn:focus {
+  outline: none!important;
+  box-shadow: none!important;
 }

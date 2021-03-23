@@ -8,7 +8,7 @@
             <p class="text-light">É só se identificar, eu estou disponível para conversar todos os dias da semana. gostaria de fazer um orçamento?</p>
           </div>
           <div class="col-12 col-lg-9">
-            <form action="">
+            <form class="text-white" action="">
               <div class="row mb-4">
                 <div class="col form-group">
                   <label for="exampleInputNome1">Nome</label>

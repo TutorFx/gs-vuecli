@@ -7,7 +7,7 @@
     <blacklivesmatter/>
     <hero v-show="true" />
     <navigation/>
-    <router-view/>
+      <router-view/>
     <tfooter/>
   </div>
 </template>
@@ -20,10 +20,6 @@ import hero from "@/components/hero"
 import tfooter from "@/components/tfooter"
 import blacklivesmatter from "@/components/blacklivesmatter.vue"
 
-import Vue from 'vue'
-import VueMeta from 'vue-meta'
-
-
 
 export default {
   components: {navigation, hero, tfooter, blacklivesmatter},
@@ -31,6 +27,15 @@ export default {
 
 </script>
 
-<style>
+<style lang="scss">
+  $body-font-family: 'Montserrat';
+  $title-font: 'Montserrat';
 
+  .v-application {
+   font-family: $body-font-family, sans-serif !important;
+    .title { // To pin point specific classes of some components
+       font-family: $title-font, sans-serif !important;
+    }
+ }
+ 
 </style>

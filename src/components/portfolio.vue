@@ -67,7 +67,7 @@
                   <div class="testi-details d-flex pt-3">
                     <img
                       class="testi-img"
-                      src="@/assets/img/testi/Jessica.webp"
+                      :src="require('@/assets/img/testi/Jessica.webp')"
                       alt=""
                     />
                     <div class="pl-4 testi-content">
@@ -97,7 +97,7 @@
                   <div class="testi-details d-flex pt-3">
                     <img
                       class="testi-img"
-                      src="@/assets/img/testi/Gui.webp"
+                      :src="require('@/assets/img/testi/Gui.webp')"
                       alt=""
                     />
                     <div class="pl-4 testi-content">
@@ -124,7 +124,7 @@
                   <div class="testi-details d-flex pt-3">
                     <img
                       class="testi-img"
-                      src="@/assets/img/testi/breeze.webp"
+                      :src="require('@/assets/img/testi/breeze.webp')"
                       alt=""
                     />
                     <div class="pl-4 testi-content">
@@ -188,4 +188,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.portfolio{
+  background-color:#011A01;
+}
+</style>

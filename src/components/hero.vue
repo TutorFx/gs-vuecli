@@ -22,10 +22,10 @@
           >
             <div class="circle overflow-hidden my-2 js-button">
               <img
-                src="@/assets/img/foto-pessoal/me.jpg"
+                :src="require('@/assets/img/foto-pessoal/me.jpg')"
                 alt="Foto pessoal do Gabriel Serejo"
                 class=""
-              />
+              >
             </div>
           </div>
         </div>
@@ -44,11 +44,16 @@ export default {
       renderer: 'svg',
       loop: true,
       autoplay: true,
-      path: 'https://assets10.lottiefiles.com/packages/lf20_f4nmtrpi.json' // the path to the animation json
+      path: `${this.publicPath}hero.json`, // the path to the animation json
     });
   },
   created(){
-  }
+  },    
+  data() {
+        return {
+            publicPath: process.env.BASE_URL,
+        }
+    }
 }
 </script>
 

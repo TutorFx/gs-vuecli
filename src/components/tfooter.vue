@@ -1,7 +1,7 @@
 <template id="footer">
-    <div id="section5" class="bg-third py-5">
+    <div id="section5" class="bg-third text-white py-5">
       <div class="text-center">
-        MADE WITH <img src="@/assets/img/icon/heart.svg" class="heart" alt="LOVE"> IN GOIÂNIA
+        MADE WITH <img :src="require('@/assets/img/icon/heart.svg')" class="heart" alt="LOVE"> IN BRAZIL
       </div>
     </div>
 </template>
